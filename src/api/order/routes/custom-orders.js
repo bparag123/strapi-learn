@@ -11,6 +11,7 @@ module.exports = {
           //using global policy
           "global::my-global-policy",
         ],
+        middlewares: [{ name: "api::order.order-middleware" }],
       },
     },
   ],
