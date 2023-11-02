@@ -29,6 +29,9 @@ module.exports = createCoreController("api::order.order", ({ strapi }) => ({
       start: 0,
       limit: 1,
     });
+
+    const email = await strapi.service('api::order.order').sendEmail('ads', 'erw', 'rwre', 'fsdf');
+
     return entry;
   },
 }));
